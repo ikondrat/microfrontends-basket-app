@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { History } from 'history';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { History } from 'history';
 
 type FrontEnd = {
   register: (container: string, history: History) => void;
