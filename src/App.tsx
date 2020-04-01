@@ -4,12 +4,12 @@ import { createBrowserHistory, History } from 'history';
 
 const defaultHistory = createBrowserHistory();
 
-const App = ({ history }: { history?: History}) => {
+const App = ({ history }: { history?: History }) => {
   return (
     <Router history={history || defaultHistory}>
-      <h4>Invest application</h4>
+      <h4>Customer basket</h4>
     </Router>
   );
-}
+};
 
 export default App;

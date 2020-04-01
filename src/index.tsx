@@ -16,12 +16,9 @@ declare global {
 }
 
 if (window.frontends) {
-  window.frontends.invest = {
+  window.frontends.basket = {
     register: (containerId, history) => {
-      ReactDOM.render(
-        <App history={history} />,
-        document.getElementById(containerId),
-      );
+      ReactDOM.render(<App history={history} />, document.getElementById(containerId));
       // If you want your app to work offline and load faster, you can change
       // unregister() to register() below. Note this comes with some pitfalls.
       // Learn more about service workers: https://bit.ly/CRA-PWA
@@ -29,8 +26,6 @@ if (window.frontends) {
     },
     unregister: (containerId) => {
       ReactDOM.unmountComponentAtNode(document.getElementById(containerId) as HTMLElement);
-    }
+    },
   };
 }
-
-
